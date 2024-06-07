@@ -1,0 +1,77 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: white;
+    text-align: center;
+  }
+
+  .nav-links li {
+    margin: 20px 0;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
