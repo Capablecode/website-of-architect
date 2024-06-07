@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ProjectSection from "../../ProjectSection";
+// import ProjectSection from "../../ProjectSection";
 const Home = () => {
   return (
     <div>
