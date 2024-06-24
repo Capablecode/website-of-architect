@@ -54,11 +54,6 @@ p {
 }
 
 @media (max-width: 768px) {
-  .focus-item {
-    flex: 1;
-    max-width: none;
-    margin: 0 20px;
-  }
   .focus-content {
     flex-direction: column;
     justify-content: center;
@@ -66,9 +61,14 @@ p {
   .focus-item {
     flex-direction: column;
     width: 100%;
+    padding: 10px 10px;
   }
 
   p {
     text-align: left;
+  }
+  .number {
+    max-width: 100%;
+    height: auto;
   }
 }

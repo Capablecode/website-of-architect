@@ -105,8 +105,10 @@ const Project = () => {
             <img src={Divider} />
           </span>
           <span className="color-gray">05</span>
-          <button className="prev-btn">&larr;</button>
-          <button className="next-btn">&rarr;</button>
+          <div className="btn">
+            <button className="prev-btn">&larr;</button>
+            <button className="next-btn">&rarr;</button>
+          </div>
         </div>
       </div>
       <FooterSection />
