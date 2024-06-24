@@ -1,0 +1,96 @@
+.project-container {
+  max-width: 1280px;
+}
+
+.main {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.project-image {
+  width: 670px;
+  height: 435px;
+  object-fit: cover;
+}
+.info-1 {
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+  color: #bdbdbd;
+}
+.info-2 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: #333333;
+  margin-bottom: 2rem;
+}
+.horizon-rule {
+  width: 100%;
+  padding: 20px 10px;
+}
+.description {
+  background-color: #fbfbfb;
+  width: 100%;
+  padding: 10px 20px;
+}
+.heading {
+  margin-bottom: 3rem;
+  color: #bdbdbd;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 46.88px;
+}
+.description p {
+  max-width: 450px;
+  text-align: justify;
+}
+.btn {
+  margin-top: 5rem;
+}
+.view-more-btn {
+  background: #fff;
+  border: transparent;
+  padding: 20px 30px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.view-more-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+pagination {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.pagination span {
+  font-size: 1.2em;
+  margin: 0 5px;
+}
+
+.pagination .divider {
+  font-weight: bold;
+  align-content: center;
+  padding: 10px;
+}
+
+.pagination .prev-btn,
+.pagination .next-btn {
+  background: none;
+  border: 1px;
+  font-size: 1em;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 6px;
+  background-color: #f2f2f2;
+}

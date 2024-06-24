@@ -1,36 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
-// import ProjectSection from "../../ProjectSection";
+import Header from "../header/Header";
+import "../header/Header.css";
+import ProjectSection from "../../page-components/ProjectSection";
+import AboutSection from "../../page-components/AboutSection";
+import FocusSection from "../../page-components/FocusSection";
+import ContactUsSection from "../../page-components/ContactUsSection";
+import FooterSection from "../../page-components/FooterSection";
+import OurProjectSection from "../../page-components/OurProjectSection";
 const Home = () => {
   return (
     <div>
-      <nav className="navbar">
-        <div class="logo">BRYAN PALACE</div>
-        <ul className="nav-links">
-          <li>
-            <Link to="/">MAIN</Link>
-          </li>
-          <li>
-            <Link to="/gallery">GALLERY</Link>
-          </li>
-          <li>
-            <Link to="/project">PROJECTS</Link>
-          </li>
-          <li>
-            <Link to="/certification">CERTIFICATION</Link>
-          </li>
-          <li>
-            <Link to="/contacts">CONTACTS</Link>
-          </li>
-        </ul>
-        <div class="burger" onClick={toggleNav}>
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </nav>
-
+      <Header />
       <ProjectSection />
+      <AboutSection />
+      <FocusSection />
+      <OurProjectSection />
+      <ContactUsSection />
+      <FooterSection />
     </div>
   );
 };

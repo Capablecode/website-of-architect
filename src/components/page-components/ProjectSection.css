@@ -1,0 +1,160 @@
+/* style for the second section*/
+.project-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  max-width: 100%;
+}
+.project-title {
+  font-size: 3rem;
+  margin: 0;
+  color: #888;
+  letter-spacing: 1x;
+}
+
+.project-subtitle {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.project-navigation {
+  display: flex;
+  gap: 10px;
+  margin: 70px 0;
+}
+
+.nav-button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-button:hover {
+  background: #f0f0f0;
+}
+
+.project-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  color: #999;
+}
+.splash {
+  font-size: 2rem;
+}
+
+.view-project-button {
+  margin-top: 20px;
+  padding: 25px 15px;
+  background: #fff;
+  color: #333;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 3px;
+  position: absolute;
+  /* bottom: 1.8rem; */
+  bottom: 0;
+  left: 0;
+}
+
+.view-project-button:hover {
+  background: #333;
+  color: #fff;
+}
+
+.project-image-container {
+  position: relative;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.project-image {
+  object-fit: cover;
+  width: 100%;
+  /* width: 770px;
+  height: 820px; */
+}
+
+@media (max-width: 1024px) {
+  .project-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-content {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .project-image-container {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 2rem;
+  }
+  .project-image-container {
+    width: 100%;
+    /* margin-top: 20px; */
+  }
+
+  .project-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .nav-button {
+    width: 25px;
+    height: 25px;
+  }
+
+  .view-project-button {
+    padding: 8px 16px;
+  }
+
+  .project-counter {
+    font-size: 0.9rem;
+  }
+
+  .project-section {
+    max-width: 100%;
+    padding: 10px 20px;
+  }
+
+  .project-image {
+    object-fit: contain;
+    max-width: 100%;
+  }
+  .project-title {
+    font-size: 1.5rem;
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .project-subtitle {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 768px) {
+}

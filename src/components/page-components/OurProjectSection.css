@@ -1,0 +1,95 @@
+.projects-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.project {
+  position: relative;
+}
+
+.project.large {
+  width: 570px;
+  height: 255px;
+}
+
+.project.small {
+  width: 277px;
+  height: 255px;
+}
+.project.small-next {
+  width: 470px;
+  height: 255px;
+}
+
+.project.small-nextt {
+  width: 390px;
+  height: 255px;
+}
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project.large:hover .overlay {
+  opacity: 1;
+}
+
+.view-more {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.all-projects {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.all-projects:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .project.large,
+  .project.small {
+    flex: 1 1 100%;
+    height: auto;
+  }
+}

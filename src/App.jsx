@@ -8,7 +8,6 @@ import Contacts from "./components/pages/contacts/Contacts";
 
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
-
 function App() {
   return (
     <BrowserRouter>
