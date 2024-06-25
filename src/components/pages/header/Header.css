@@ -29,9 +29,14 @@
   text-decoration: none;
   font-weight: 100;
   line-height: 8px;
+  padding: 5px;
 }
-
-.burger {
+.nav-links a:hover {
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+}
+.burger,
+.close {
   display: none;
   cursor: pointer;
   flex-direction: column;
@@ -39,11 +44,37 @@
   height: 21px;
 }
 
-.burger div {
+.burger div,
+.close div {
   width: 25px;
   height: 3px;
   background-color: black;
   border-radius: 5px;
+}
+
+.close {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.close .line1,
+.close .line2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  transform-origin: center;
+}
+
+.close .line1 {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close .line2 {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 @media (max-width: 768px) {
@@ -83,6 +114,10 @@
   .burger {
     display: flex;
   }
+  .close {
+    display: flex;
+  }
+
   .navbar {
     max-width: 100%;
   }

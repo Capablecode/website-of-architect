@@ -37,11 +37,24 @@ const Header = () => {
             <Link to="/contacts">CONTACTS</Link>
           </li>
         </ul>
-        <div className="burger" onClick={handleToggle}>
+        {/* <div className="burger" onClick={handleToggle}>
           <div className="line1"></div>
           <div className="line2"></div>
           <div className="line3"></div>
         </div>
+       */}
+        {!isOpen ? (
+          <div className="burger" onClick={handleToggle}>
+            <div className="line1"></div>
+            <div className="line2"></div>
+            <div className="line3"></div>
+          </div>
+        ) : (
+          <div className="close" onClick={closeMenu}>
+            <div className="line1"></div>
+            <div className="line2"></div>
+          </div>
+        )}
       </nav>
     </div>
   );
